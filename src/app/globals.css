@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 :root {
   --background: #ffffff;
@@ -14,8 +20,42 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+::-webkit-scrollbar {
+  width: 7px;
+  height: 5px;
+}
+@media (max-width: 667px) {
+  ::-webkit-scrollbar {
+    display: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F9F8F1;
+  /* border-left: 1px solid #964B00; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  background: #004E44;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #030303;
+}
+
+.syne{
+  font-family: "Syne", sans-serif;
+}
+.roman{
+font-family: 'Times New Roman', Times, serif;
+}
+
+.lora{
+font-family: "Lora", serif;
 }
