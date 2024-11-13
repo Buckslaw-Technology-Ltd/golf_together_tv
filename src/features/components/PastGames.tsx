@@ -16,10 +16,37 @@ export interface EventData {
     location: string;
 }
 
-const LiveGames: React.FC = () => {
+const PastGames: React.FC = () => {
     const router = useRouter();
 
     const eventData: EventData[] = [
+        {
+            image: "/assets/images/heroCard.jpeg",
+            event: "1st Nigeria Ladies Professional Golf Tournament",
+            timeStart: "14:00",
+            timeStop: "17:00",
+            link: "https://youtu.be/UPH_bWqL5jo?si=L1Pjczw3Ti9xAcL4",
+            date: "November 23, 2024",
+            location: "Ibadan Golf Club",
+        },
+        {
+            image: "/assets/images/heroCard.jpeg",
+            event: "Children Golf Championship",
+            timeStart: "14:00",
+            timeStop: "17:00",
+            link: "https://youtu.be/UGB0D-88WRY?si=9QWXkAkKF5tuHL81",
+            date: "December 10, 2024",
+            location: "Ikoyi Golf Club",
+        },
+        {
+            image: "/assets/images/heroCard.jpeg",
+            event: "World Golf Championship",
+            timeStart: "14:00",
+            timeStop: "17:00",
+            link: "https://youtu.be/mmtj5DurYBU?si=TyXRQ4A-grJPmDdi",
+            date: "December 20, 2024",
+            location: "Ikeja Golf Club",
+        },
         {
             image: "/assets/images/heroCard.jpeg",
             event: "1st Nigeria Ladies Professional Golf Tournament",
@@ -62,7 +89,7 @@ const LiveGames: React.FC = () => {
             <div className='relative z-10 p-4 lg:p-10 w-full h-full flex flex-col gap-3 md:gap-5 justify-center items-center'>
                 <div className='w-full h-full flex flex-col justify-center items-center gap-4'>
                     <h1 className="w-full text-center text-[2rem] sm:text-[2.5rem] lg:text-[3.2rem] syne leading-[2.8rem] md:leading-[3.2rem] text-gray-700 font-bold">
-                        LIVE GAMES
+                        PAST GAMES
                     </h1>
 
                     <div className='mx-auto w-[95%] md:w-[90%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4'>
@@ -111,4 +138,4 @@ const LiveGames: React.FC = () => {
     );
 };
 
-export default LiveGames;
+export default PastGames;

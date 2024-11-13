@@ -27,11 +27,11 @@ const Header: React.FC = () => {
         </Link>
       </div>
 
-      <div className="hidden md:flex justify-center items-center gap-5">
-        <Link href="/login" className={` text-green-800 font-medium cursor-pointer hover:underline`}>
+      <div className="hidden md:flex justify-center items-center gap-3">
+        <Link href="/login" className={` text-[#468B64] border border-[#468B64] px-8 py-2 rounded-full font-medium cursor-pointer hover:underline`}>
           Sign in
         </Link>
-        <Link href="/register" className={`text-white bg-[#004E44] font-medium px-8 py-2 rounded-full`}>
+        <Link href="/register" className={`text-white bg-[#468B64] font-medium px-8 py-2 rounded-full`}>
           Register
         </Link>
       </div>
@@ -58,9 +58,7 @@ const Header: React.FC = () => {
             </div>
 
             <div className="flex flex-col text-[1.3em] justify-center items-center gap-2 w-full">
-              <Link href="/" className="text-green-800 font-medium">Home</Link>
-              <Link href="/about" className="text-green-800 font-medium">About</Link>
-              <Link href="/tournaments" className="text-green-800 font-medium">Tournament</Link>
+              <Link href="/" className="text-green-800 font-medium">Live Games</Link>
               <Link href="/past-games" className="text-green-800 font-medium">Past Games</Link>
             </div>
 
